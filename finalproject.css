@@ -1,0 +1,106 @@
+table {
+  border: 2px solid blue;
+  background-color: white;
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Graduate', cursive;
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+}
+
+
+h1 {
+  font-family: 'Graduate', cursive;
+  text-align: center;
+  color: white;
+  border: 2px solid red;
+  width: 750px;
+  margin-left: 325px;
+  background-color: darkblue;
+  font-size: 60px;
+  border: 2px solid red;
+
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  background-color: darkblue;
+  width: 450px;
+  height: 25px;
+  margin-left: 485px;
+  font-family: 'Graduate', cursive;
+  border: 2px solid red;
+}
+
+ul {
+  text-align: center;
+  font-family: 'Graduate', cursive;
+  color: red;
+  background-color: white;
+  border: 2px solid red;
+  width: 200px;
+  font-size: 30px;
+  text-decoration:none;
+}
+
+img {
+  height: 80px;
+}
+
+
+#wR1 {
+  float: left;
+  margin-right: 0px;
+  margin-left: 20px;
+  border: 2px solid blue;
+  margin-top: 0px;
+}
+
+
+#TE {
+float:right;
+margin-right: 20px;
+}
+
+#SLOT {
+  margin-right: 55px;
+}
+
+#FB {
+}
+
+#QB {
+}
+
+#RB {
+}
+
+#RRB {
+  margin-left: 100px;
+}
+
+#WR {
+  float: left;
+  margin-left: 50px;
+}
+
+.head {
+  color: blue;
+
+}
+.twitter-timeline {
+  float: right;
+}
+body {
+  background-image: url(football.jpg);
+  text-align: center;
+}
+
+p {
+  color: white;
+  background-color: darkblue;
+  font-family: 'Graduate', cursive;
+}

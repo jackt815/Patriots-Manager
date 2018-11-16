@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title> myManager </title>
+    <link rel="stylesheet" href="finalproject.css">
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <script src="finalproject.js"></script>
+  </head>
+  <body>
+  <header>
+    <h1> myManager: Patriots </h1>
+    <h3> This week's matchup: Patriots vs. Jets </h3>
+    <p> Use the up and down arrows to change which player is starting. You can edit the player names, by clicking on them. To add a Wide Reciever, click the new player icon. </p>
+    <!--Note: The following link's embed code was provided by twitter-->
+    <a class="twitter-timeline" data-width="220" data-height="400" data-theme="light" href="https://twitter.com/Patriots?ref_src=twsrc%5Etfw">Tweets by Patriots</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </header>
+    <table id="wR1">
+        <tr class="head">
+          <td> Wide Reciever <i onclick="addItemPrompt(wR1)" class="fas fa-user-plus"></i> </td>
+        </tr>
+        <tr contenteditable="true" id="JG10"> <!--Note: I learned about contenteditable from W3schools-->
+          <td><i onclick="downW()" class="fas fa-arrow-down"></i> 1. Josh Gordon </td>
+        </tr>
+        <tr contenteditable="true" id="JE11">
+          <td><i onclick="upWR()" class="fas fa-arrow-up"></i> 2. Julian Edelman </td>
+        </tr>
+    </table>
+    <table id="lT">
+      <tr class="head">
+        <td> Left Tackle </td>
+      </tr>
+      <tr contenteditable="true" id="TB77">
+        <td><i onclick="downLT()" class="fas fa-arrow-down"></i> 1. Trent Brown </td>
+      </tr>
+      <tr>
+        <td contenteditable="true" id="LW68"><i onclick="upLT()" class="fas fa-arrow-up"></i> 2. LaAdrian Waddle </td>
+      </tr>
+    </table>
+    <table id="lG">
+      <tr class="head">
+        <td> Left Guard </td>
+      </tr>
+      <tr contenteditable="true" id="JT62">
+        <td><i onclick="downLG()" class="fas fa-arrow-down"></i> 1. Joe Thuney </td>
+      </tr>
+      <tr contenteditable="true" id="CC">
+        <td><i onclick="upLG()" class="fas fa-arrow-up"></i> 2. Cole Croston </td>
+      </tr>
+    </table>
+    <table id="C">
+      <tr class="head">
+        <td> Center </td>
+      </tr>
+        <tr contenteditable="true" id="DA60">
+        <td><i onclick="downC()" class="fas fa-arrow-down"></i> 1. David Andrews </td>
+      </tr>
+        <tr contenteditable="true" id="JF6">
+        <td><i onclick="upC()" class="fas fa-arrow-up"></i> 2. James Ferentz </td>
+      </tr>
+    </table>
+    <table id="RG">
+      <tr class="head">
+        <td> Right Guard </td>
+      </tr>
+        <tr contenteditable="true" id="RG1">
+        <td><i onclick="downRG()" class="fas fa-arrow-down"></i> 1. Shaq Mason </td>
+      </tr>
+        <tr contenteditable="true" id="RG2">
+        <td><i onclick="upRG()" class="fas fa-arrow-up"></i> 2. Ted Karras </td>
+      </tr>
+    </table>
+    <table id="RT">
+      <tr class="head">
+        <td> Right Tackle </td>
+      </tr>
+      <tr contenteditable="true" id="RT1">
+        <td><i onclick="downRT()" class="fas fa-arrow-down"></i> 1. Marcus Cannon </td>
+      </tr>
+        <tr contenteditable="true" id="RT2">
+        <td><i onclick="upRT()" class="fas fa-arrow-up"></i> 2. LaAdrian Waddle </td>
+      </tr>
+    </table>
+    <table id="TE">
+      <tr class="head">
+        <td> Tight End </td>
+      </tr>
+      <tr contenteditable="true"  id="TE1">
+        <td><i onclick="downTE()" class="fas fa-arrow-down"></i> 1. Gronk </td>
+      </tr>
+      <tr contenteditable="true" id="TE2">
+        <td><i onclick="upTE()" class="fas fa-arrow-up"></i> 2. Dwayne Allen </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table id="QB">
+      <tr class="head">
+        <td> Quarterback </td>
+      </tr>
+      <tr contenteditable="true" id="QB1">
+        <td><i onclick="downQB()" class="fas fa-arrow-down"></i> 1. Tom Brady </td>
+      </tr>
+      <tr contenteditable="true" id="QB2">
+        <td><i onclick="upQB()" class="fas fa-arrow-up"></i> 2. Brian Hoyer </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table id="RB">
+      <tr class="head">
+        <td> Running Back </td>
+      </tr>
+      <tr contenteditable="true" id="RB1">
+        <td><i onclick="downRB()" class="fas fa-arrow-down"></i> 1. Sony Michel </td>
+      </tr>
+      <tr contenteditable="true" id="RB2">
+        <td><i onclick="upRB()" class="fas fa-arrow-up"></i> 2. C. Patterson </td>
+      </tr>
+    </table>
+    <table id="RRB">
+      <tr class="head">
+        <td> Receiving RB </td>
+      </tr>
+      <tr contenteditable="true" id="RRB1">
+        <td><i onclick="downRRB()" class="fas fa-arrow-down"></i> 1. James White </td>
+      </tr>
+      <tr contenteditable="true" id="RRB2">
+        <td><i onclick="upRRB()" class="fas fa-arrow-up"></i> 2. Rex Burkhead </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <p>Created by Jack Thomsen for CSC-450</p>
+    </footer>
+  </body>
+
+</html>
